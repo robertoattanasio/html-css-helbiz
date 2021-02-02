@@ -129,6 +129,33 @@ nav li a:hover {
   transition: 0.2s;
 }
 
+.bicycle-card {
+  margin: 30px;
+  border-radius: 3px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+img.bicycle-card-title  {
+  max-width: 180px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.bicycle-card p {
+  font-size: 16px;
+  color: black;
+  margin: 10px 0;
+}
+
+.bicycle-card p a {
+  color: rgb(20,20,255);
+}
+
+img.bicycle-card-bicycle {
+  width: 60%;
+  margin-top: 50px;
+}
 
 
 
@@ -160,6 +187,10 @@ nav li a:hover {
   .social-badges img {
     max-width: 100px;
   }
+
+  .bicycle-card-description {
+    display: none;
+  }
 }
 
 /* ISTRUZIONI PER TABLET */
@@ -183,5 +214,9 @@ nav li a:hover {
 
   .social-badges img {
     max-width: 150px;
+  }
+
+  .bicycle-card-description {
+    display: none;
   }
 }
