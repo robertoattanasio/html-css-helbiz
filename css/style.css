@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+section {
+  margin: 40px 0;
+}
+
 /* HEADER */
 .header-top {
   position: fixed;
@@ -21,7 +25,7 @@ a {
   z-index: 999;
 }
 
-.header-top > .container {
+.header-top>.container {
   max-width: 1070px;
   padding: 0 30px;
 }
@@ -129,6 +133,7 @@ nav li a:hover {
   transition: 0.2s;
 }
 
+/* SEZIONE BICYCLE CARD */
 .bicycle-card {
   margin: 30px;
   border-radius: 3px;
@@ -136,7 +141,7 @@ nav li a:hover {
   text-align: center;
 }
 
-img.bicycle-card-title  {
+img.bicycle-card-title {
   max-width: 180px;
   height: 50px;
   margin-top: 50px;
@@ -149,7 +154,7 @@ img.bicycle-card-title  {
 }
 
 .bicycle-card p a {
-  color: rgb(20,20,255);
+  color: rgb(20, 20, 255);
 }
 
 img.bicycle-card-bicycle {
@@ -157,12 +162,49 @@ img.bicycle-card-bicycle {
   margin-top: 50px;
 }
 
+/* SEZIONE IPHONE APP */
+section.banner {
+  position: relative;
+  width: 100%;
+}
 
+img.banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  z-index: 1;
+}
 
+/* POSIZIONAMENTO CONTAINER APP */
+.app {
+  position: relative;
+  top: 150px;
+  height: 500px;
+  z-index: 2;
+}
 
+.app [class*="col-"] {
+  position: relative;
+  text-align: center;
+}
+
+/* STACCO DEI P DAL TOP BORDER */
+.app [class*="col-"] p {
+  position: absolute;
+  top: 400px;
+  padding: 0 20px;
+}
+
+img.iphone {
+  width: 100%;
+}
 
 /* ISTRUZIONI PER MOBILE */
 @media screen and (max-width: 768px) {
+
   /* ATTIVAZIONE HAMBURGER NAV MOBILE */
   nav.mobile {
     display: block;
@@ -181,7 +223,7 @@ img.bicycle-card-bicycle {
   }
 
   .jumbo h2 {
-  display: none;
+    display: none;
   }
 
   .social-badges img {
@@ -191,10 +233,16 @@ img.bicycle-card-bicycle {
   .bicycle-card-description {
     display: none;
   }
+
+  /* RESIZE IPHONE MOBILE */
+  img.iphone {
+    width: 70%;
+  }
 }
 
 /* ISTRUZIONI PER TABLET */
 @media screen and (min-width: 769px) and (max-width: 992px) {
+
   /* ATTIVAZIONE HAMBURGER NAV PER TABLET*/
   nav.mobile {
     display: block;
@@ -218,5 +266,10 @@ img.bicycle-card-bicycle {
 
   .bicycle-card-description {
     display: none;
+  }
+
+  /* RESIZE IPHONE TABLET */
+  img.iphone {
+    width: 50%;
   }
 }
