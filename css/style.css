@@ -202,9 +202,41 @@ img.iphone {
   width: 100%;
 }
 
+/* ISTRUZIONI PER TABLET */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /* ATTIVAZIONE HAMBURGER NAV PER TABLET*/
+  nav.mobile {
+    display: block;
+    font-size: 30px;
+    text-align: right;
+    padding-top: 2px;
+  }
+
+  /* DISATTIVAZIONE NAV ESTESA PER TABLET */
+  nav.desktop {
+    display: none;
+  }
+
+  .jumbo h1 {
+    font-size: 40px;
+  }
+
+  .social-badges img {
+    max-width: 150px;
+  }
+
+  .bicycle-card-description {
+    display: none;
+  }
+
+  /* RESIZE IPHONE TABLET */
+  img.iphone {
+    width: 50%;
+  }
+}
+
 /* ISTRUZIONI PER MOBILE */
 @media screen and (max-width: 768px) {
-
   /* ATTIVAZIONE HAMBURGER NAV MOBILE */
   nav.mobile {
     display: block;
@@ -237,39 +269,5 @@ img.iphone {
   /* RESIZE IPHONE MOBILE */
   img.iphone {
     width: 70%;
-  }
-}
-
-/* ISTRUZIONI PER TABLET */
-@media screen and (min-width: 769px) and (max-width: 992px) {
-
-  /* ATTIVAZIONE HAMBURGER NAV PER TABLET*/
-  nav.mobile {
-    display: block;
-    font-size: 30px;
-    text-align: right;
-    padding-top: 2px;
-  }
-
-  /* DISATTIVAZIONE NAV ESTESA PER TABLET */
-  nav.desktop {
-    display: none;
-  }
-
-  .jumbo h1 {
-    font-size: 40px;
-  }
-
-  .social-badges img {
-    max-width: 150px;
-  }
-
-  .bicycle-card-description {
-    display: none;
-  }
-
-  /* RESIZE IPHONE TABLET */
-  img.iphone {
-    width: 50%;
   }
 }
